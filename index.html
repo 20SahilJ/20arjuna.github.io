@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<p>The concept is nothing new, of course. The flip phone pre-dates the ubiquitous smartphone slab by decades. And a number of companies have tried to cheat the system. 2017’s Axon M was one of the more memorable attempts in recent memory — though that device amounted to little more than two screens jammed together on a hinge.
-
+<h1> Speech 2 text using google </h1>
+<p> Configure path using --> export GOOGLE_APPLICATION_CREDENTIALS="/Users/20arjuna/Desktop/My First Project-8ad3acf5d8d8.json"</p>
+<span class="str">"{<br>&nbsp; 'config': {<br>&nbsp; &nbsp; 'language_code': 'en-US'<br>&nbsp; },<br>&nbsp; 'audio':{<br>'uri':'gs://audio_files_a2n/FILENAME.flac'<br>&nbsp; }<br>}"</span>
+<p> curl -H "Authorization: Bearer "$(gcloud auth application-default print-access-token) \
+     -H "Content-Type: application/json; charset=utf-8" \
+     "https://speech.googleapis.com/v1/operations/ NUMBER FROM ABOVE"
 </p>
+<p> Keep running the above prompt again and again.
+</p>
+
 </body>
 </html>
