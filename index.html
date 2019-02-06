@@ -3,17 +3,10 @@
 <body>
 <h1> Speech 2 text using google </h1>
 <p> Configure path using --> export GOOGLE_APPLICATION_CREDENTIALS="/Users/20arjuna/Desktop/My First Project-8ad3acf5d8d8.json"</p>
-<span class="pln">curl </span>
-<span class="pun">-</span>
-<span class="pln">X POST </span>
-<span class="pun">\</span>
 
-<span class="str">"{<br>&nbsp; 'config': {<br>&nbsp; &nbsp; 'language_code': 'en-US'<br>&nbsp; },<br>&nbsp; 'audio':{<br>'uri':'gs://audio_files_a2n/FILENAME.flac'<br>&nbsp; }<br>}"</span>
-<span class="str">"https://speech.googleapis.com/v1/speech:longrunningrecognize"</span>
-<p> curl -H "Authorization: Bearer "$(gcloud auth application-default print-access-token) \<p>
-<p>     -H "Content-Type: application/json; charset=utf-8" \</p>
-     "https://speech.googleapis.com/v1/operations/ NUMBER FROM ABOVE"
-</p>
+
+
+
 <p> Keep running the above prompt again and again.
 </p>
 
