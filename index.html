@@ -2,13 +2,22 @@
 <html>
 <body>
 <h1> Speech 2 text using google </h1>
-<h2> Configure path using --> export GOOGLE_APPLICATION_CREDENTIALS="/Users/20arjuna/Desktop/My First Project-8ad3acf5d8d8.json"</h2>
-fasl;kjflkasdjf
-<a href="https://cloud.google.com/speech-to-text/docs/async-recognize">
-  <img src="curlpost.png" alt="curlpost">
-</a>
+<h2> Configure path using --> export GOOGLE_APPLICATION_CREDENTIALS="/Users/20arjuna/Desktop/APIKEYFILENAME.json" Make sure the file you input here is the file where the api key is located, NOT the audio file</h2>
 
+<a href="https://cloud.google.com/speech-to-text/docs/async-recognize">
+  <img src="curlpost2.png" alt="curlpost">
+</a>
 <br>
+<br>
+<br>
+<h2> Convert your video to a flac file with the following link. </h2>
+<a href = "https://catchvideo.net"> </a>
+<br>
+<br>
+<h2> To convert this flac file from a stereo to a mono type file: "cd" until you get to the directory where the flac file is stored. Initiate the brew command by typing the following into your terminal: brew install ffmpeg. Then use the following command: ffmpeg -i FILENAME.flac -ac1 OUTPUTFILE.flac</h2> 
+<br>
+<br>
+<h2> Upload the file to a bucket in google storage, probably in the audio_files_a2n bucket. Now make sure the name of the flac file is substituted into the uri in the above code (represented in the curlpost image). The uri should look something like gs://audio_files_a2n/FILENAME.flac </h2> 
 <br>
 <br>
 <br>
